@@ -2,11 +2,200 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cloudberry.apache.org/zh/blog</id>
     <title>Apache Cloudberry (Incubating) is one advanced and mature open-source MPP (Massively Parallel Processing) databases available.</title>
-    <updated>2025-05-23T00:00:00.000Z</updated>
+    <updated>2025-07-09T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cloudberry.apache.org/zh/blog"/>
     <subtitle>Apache Cloudberry (Incubating) Blog</subtitle>
     <icon>https://cloudberry.apache.org/zh/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Apache Cloudberry @ Community Over Code Asia 2025 - Explore Sessions and Visit Our Booth!]]></title>
+        <id>https://cloudberry.apache.org/zh/blog/apache-cloudberry-at-community-over-code-asia-2025</id>
+        <link href="https://cloudberry.apache.org/zh/blog/apache-cloudberry-at-community-over-code-asia-2025"/>
+        <updated>2025-07-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Community Over Code Asia 2025 is coming!]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="community over code asia 2025" src="https://cloudberry.apache.org/zh/assets/images/coc-asia-logo-dark-c3274378247b27f6dc24ade02e1c81ae.png" width="1500" height="431" class="img_ev3q"></p>
+<p>We’re thrilled to welcome you to <a href="https://asia.communityovercode.org/" target="_blank" rel="noopener noreferrer">Community Over Code Asia 2025</a> (previously known as ApacheCon Asia) - the premier open-source event in Asia, hosted by the Apache Software Foundation. Taking place in Beijing from July 25–27, 2025, this in-person gathering is your chance to dive into the latest innovations, learn from domain experts, and connect with the global open-source community.</p>
+<p>Apache Cloudberry will be featured across six exciting sessions, covering everything from architecture deep dives and AI integration to real-world use cases and roadmap insights. Whether you’re a developer, data engineer, database specialist, or decision-maker, there’s something for you.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="featured-sessions">Featured sessions<a href="https://cloudberry.apache.org/zh/blog/apache-cloudberry-at-community-over-code-asia-2025#featured-sessions" class="hash-link" aria-label="Featured sessions的直接链接" title="Featured sessions的直接链接">​</a></h2>
+<p>Let’s take a look at the featured Apache Cloudberry sessions, ranging from project introductions and deep technical dives to practical solutions and strategic insights.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="seatunnel-architecture-analysis-and-cloudberry-integration-practice">SeaTunnel Architecture Analysis and Cloudberry Integration Practice<a href="https://cloudberry.apache.org/zh/blog/apache-cloudberry-at-community-over-code-asia-2025#seatunnel-architecture-analysis-and-cloudberry-integration-practice" class="hash-link" aria-label="SeaTunnel Architecture Analysis and Cloudberry Integration Practice的直接链接" title="SeaTunnel Architecture Analysis and Cloudberry Integration Practice的直接链接">​</a></h4>
+<p>Hongyu Chen, SeaTunnel Contributor and Data Integration R&amp;D Engineer at NetEase</p>
+<blockquote>
+<p>In this session, we will explore Apache SeaTunnel, a high-performance distributed data integration platform designed for seamless synchronization of massive datasets across heterogeneous sources. Attendees will gain insights into SeaTunnel’s core architecture, including its modular plugin system, unified abstractions leveraging Spark and Flink, and its evolution from V1 to V2 with enhanced scalability and engine-agnostic design. We will delve into advanced features such as dynamic sharding strategies, data sampling techniques, and optimized handling of string-based partitioning for efficient data distribution.</p>
+<p>The session will also showcase a practical integration case with Cloudberry, demonstrating how SeaTunnel’s JDBC-based connector simplifies bidirectional data workflows while highlighting performance considerations. Finally, we’ll discuss future optimizations, including plans to leverage Cloudberry’s parallel processing via the gpfdist protocol for large-scale data migration. This talk is ideal for data engineers and architects seeking to streamline data integration workflows, break down silos, and harness the full potential of modern data ecosystems.</p>
+</blockquote>
+<p>Ideal for data engineers interested in cross-platform data pipelines and performance tuning.</p>
+<p>🫱 Session details: <a href="https://asia.communityovercode.org/sessions/dataops-915377.html" target="_blank" rel="noopener noreferrer">https://asia.communityovercode.org/sessions/dataops-915377.html</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="from-proposal-to-progress-lessons-learned-from-incubating-apache-cloudberry">From Proposal to Progress: Lessons Learned from Incubating Apache Cloudberry<a href="https://cloudberry.apache.org/zh/blog/apache-cloudberry-at-community-over-code-asia-2025#from-proposal-to-progress-lessons-learned-from-incubating-apache-cloudberry" class="hash-link" aria-label="From Proposal to Progress: Lessons Learned from Incubating Apache Cloudberry的直接链接" title="From Proposal to Progress: Lessons Learned from Incubating Apache Cloudberry的直接链接">​</a></h4>
+<p>Dianjin Wang, PPMC Member of Apache Cloudberry, ALC Beijing Member, Track Chair of ApacheCon Asia 2021-2025, Head of Open Source at HashData</p>
+<blockquote>
+<p>Apache Cloudberry, a massively parallel processing (MPP) database based on Greenplum, entered the Apache Incubator with the vision of bringing analytical power to the open-source community. As one of the initiators and ongoing contributors to the project, I’ve had the opportunity to closely experience every stage of the incubation journey — from drafting the proposal and forming the PPMC to announcing and marketing promotion, to cleaning up the source code, and building community momentum.</p>
+<p>In this talk, I will share firsthand insights into what it takes to navigate the Apache Incubator process effectively. I’ll highlight the challenges we faced, how we built a diverse and active community, ensured compliance with Apache’s governance and IP guidelines, and balanced open-source development with commercial interests. This session aims to offer practical guidance for new and prospective incubator projects, mentors, and contributors interested in sustaining healthy open-source ecosystems under the Apache Way.</p>
+</blockquote>
+<p>A must-attend for new incubator projects, mentors, or anyone curious about open-source sustainability.</p>
+<p>🫱 Session details: <a href="https://asia.communityovercode.org/sessions/incubator-906736.html" target="_blank" rel="noopener noreferrer">https://asia.communityovercode.org/sessions/incubator-906736.html</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dive-into-vectorized-execution-for-apache-cloudberry-design-challenges-and-performance-gains">Dive into Vectorized Execution for Apache Cloudberry: Design, Challenges, and Performance Gains<a href="https://cloudberry.apache.org/zh/blog/apache-cloudberry-at-community-over-code-asia-2025#dive-into-vectorized-execution-for-apache-cloudberry-design-challenges-and-performance-gains" class="hash-link" aria-label="Dive into Vectorized Execution for Apache Cloudberry: Design, Challenges, and Performance Gains的直接链接" title="Dive into Vectorized Execution for Apache Cloudberry: Design, Challenges, and Performance Gains的直接链接">​</a></h4>
+<p>Zhang Yue, Software Engineer at HashData</p>
+<blockquote>
+<p>As analytical workloads grow in both scale and complexity, the demand for high-performance data processing engines continues to rise. While MPP architectures are effective at scaling out performance across hardware, databases built on PostgreSQL — such as Greenplum and Apache Cloudberry — face limitations due to PostgreSQL’s execution engine.</p>
+<p>To overcome these constraints, we introduce a vectorized execution engine for Apache Cloudberry, which is designed to unlock greater efficiency through batch processing and low-level instruction optimizations. In this session, we will take a deep dive into the design and implementation of Cloudberry’s vectorized engine solution, outline the key engineering efforts behind it, and share insights from real-world use cases—including performance benchmarks, bottlenecks we encountered, and future directions for further optimization.</p>
+</blockquote>
+<p>Join this talk if you’re interested in performance engineering or modern MPP execution models.</p>
+<p>🫱 Session details: <a href="https://asia.communityovercode.org/sessions/olap-914602.html" target="_blank" rel="noopener noreferrer">https://asia.communityovercode.org/sessions/olap-914602.html</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="from-data-to-ai-building-a-unified-analytics-platform-with-apache-cloudberry">From Data to AI: Building a Unified Analytics Platform with Apache Cloudberry<a href="https://cloudberry.apache.org/zh/blog/apache-cloudberry-at-community-over-code-asia-2025#from-data-to-ai-building-a-unified-analytics-platform-with-apache-cloudberry" class="hash-link" aria-label="From Data to AI: Building a Unified Analytics Platform with Apache Cloudberry的直接链接" title="From Data to AI: Building a Unified Analytics Platform with Apache Cloudberry的直接链接">​</a></h4>
+<p>Chuanxin Bian, Data &amp; AI Engineer at HashData</p>
+<blockquote>
+<p>Enterprises today struggle to harness AI’s full potential due to fragmented data systems, inefficient pipelines, and silos between analytics and machine learning. Apache Cloudberry, an open-source MPP data warehouse, redefines this paradigm by deeply integrating data processing with AI - eliminating barriers and accelerating innovation. In this session, we’ll demonstrate how Cloudberry enables:</p>
+<ul>
+<li>Unified Execution – Run native AI/ML models (e.g., PyTorch, Scikit-learn) directly on warehouse data.</li>
+<li>Multi-Modal Analytics – Process structured and unstructured data (PDFs, images, and other documents) in a unified framework.</li>
+<li>Smart Data Applications – Build RAG-enhanced QA, ChatBI, and multimodal search.</li>
+</ul>
+<p>You can learn how to converge data and intelligence into one platform, reducing complexity while scaling AI workloads in this session.</p>
+</blockquote>
+<p>If you’re building AI workflows on top of analytics infrastructure, don’t miss this session.</p>
+<p>🫱 Session details: <a href="https://asia.communityovercode.org/sessions/ai-915004.html" target="_blank" rel="noopener noreferrer">https://asia.communityovercode.org/sessions/ai-915004.html</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="building-a-unified-lakehouse-solution-with-apache-cloudberry">Building a Unified Lakehouse Solution with Apache Cloudberry<a href="https://cloudberry.apache.org/zh/blog/apache-cloudberry-at-community-over-code-asia-2025#building-a-unified-lakehouse-solution-with-apache-cloudberry" class="hash-link" aria-label="Building a Unified Lakehouse Solution with Apache Cloudberry的直接链接" title="Building a Unified Lakehouse Solution with Apache Cloudberry的直接链接">​</a></h4>
+<p>Rose Duan, Apache Cloudberry contributor</p>
+<blockquote>
+<p>Data warehouses excel at fast analytics, while data lakes focus on scalable storage and flexible data management. The lakehouse architecture aims to combine the best of both—seamlessly integrating data across lakes and warehouses for efficient analysis and unified governance.</p>
+<p>As a next-generation open-source MPP database, Apache Cloudberry extends its technical boundaries to build an open lakehouse solution. This talk introduces Cloudberry’s key capabilities in enabling a unified lakehouse architecture:</p>
+<ol>
+<li>Accelerated lake queries on Parquet/ORC without data movement</li>
+<li>Unified data gateway for querying and writing across heterogeneous sources</li>
+<li>Integrated data processing and sync pipeline, enabling end-to-end flow from ingestion to analytics</li>
+<li>Open metadata and storage formats for easier ecosystem integration and reduced migration cost</li>
+</ol>
+</blockquote>
+<p>Perfect for architects and data platform teams building open, scalable analytics stacks.</p>
+<p>🫱 Session details: <a href="https://asia.communityovercode.org/sessions/datalake-915987.html" target="_blank" rel="noopener noreferrer">https://asia.communityovercode.org/sessions/datalake-915987.html</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="introduction-to-apache-cloudberry-evolution-key-features-and-roadmap">Introduction to Apache Cloudberry: Evolution, Key Features, and Roadmap<a href="https://cloudberry.apache.org/zh/blog/apache-cloudberry-at-community-over-code-asia-2025#introduction-to-apache-cloudberry-evolution-key-features-and-roadmap" class="hash-link" aria-label="Introduction to Apache Cloudberry: Evolution, Key Features, and Roadmap的直接链接" title="Introduction to Apache Cloudberry: Evolution, Key Features, and Roadmap的直接链接">​</a></h4>
+<p>Max Yang, Apache Cloudberry PPMC Member, Tech VP of HashData</p>
+<blockquote>
+<p>Apache Cloudberry is an advanced and mature open-source MPP database, derived from the open-source version of the Pivotal Greenplum Database® but built on a more modern PostgreSQL kernel and with more advanced enterprise capabilities. Cloudberry can serve as a data warehouse and can also be used for large-scale analytics and AI/ML workloads.</p>
+<p>In this session, we’ll explore the origin of the project, its journey into the Apache Incubator, and how it differentiates itself from other analytical databases. We will introduce Cloudberry’s core features, architectural highlights, and share its future roadmap. This session will also provide a brief comparison with other data warehouse systems, helping the audience understand where Apache Cloudberry stands in the ecosystem and what’s coming next.</p>
+</blockquote>
+<p>A great entry point for understanding Cloudberry’s position in the data warehouse landscape.</p>
+<p>🫱 Session details: <a href="https://asia.communityovercode.org/sessions/datalake-915155.html" target="_blank" rel="noopener noreferrer">https://asia.communityovercode.org/sessions/datalake-915155.html</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-participate">How to participate<a href="https://cloudberry.apache.org/zh/blog/apache-cloudberry-at-community-over-code-asia-2025#how-to-participate" class="hash-link" aria-label="How to participate的直接链接" title="How to participate的直接链接">​</a></h2>
+<p>Ready to join? <a href="https://asia.communityovercode.org/#register" target="_blank" rel="noopener noreferrer">Register</a> now to attend Community Over Code Asia 2025 in person. We look forward to seeing you in Beijing!</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="visit-the-cloudberry-booth">Visit the Cloudberry Booth!<a href="https://cloudberry.apache.org/zh/blog/apache-cloudberry-at-community-over-code-asia-2025#visit-the-cloudberry-booth" class="hash-link" aria-label="Visit the Cloudberry Booth!的直接链接" title="Visit the Cloudberry Booth!的直接链接">​</a></h2>
+<p>The Apache Cloudberry community will be onsite with a dedicated booth. Drop by to meet the team, ask questions, check out live demos, and grab some awesome Cloudberry swag!</p>]]></content>
+        <author>
+            <name>Apache Cloudberry</name>
+        </author>
+        <category label="Event" term="Event"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Goodbye `greenplum_path.sh`, Hello `cloudberry-env.sh`: A Phased Transition Plan]]></title>
+        <id>https://cloudberry.apache.org/zh/blog/from-greenplum-path.sh-to-cloudberry-env.sh</id>
+        <link href="https://cloudberry.apache.org/zh/blog/from-greenplum-path.sh-to-cloudberry-env.sh"/>
+        <updated>2025-07-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Renaming legacy scripts such as greenplum_path.sh to cloudberry-env.sh.]]></summary>
+        <content type="html"><![CDATA[<p>To the Apache Cloudberry Community,</p>
+<p>This post outlines our plan to rename legacy user-facing scripts such as <code>greenplum_path.sh</code>, aligning them with Apache Cloudberry’s official brand identity and complying with ASF trademark policy. This will be a two-step process designed to be transparent and minimize disruption for our users.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="background-why-this-change-is-necessary">Background: Why This Change is Necessary<a href="https://cloudberry.apache.org/zh/blog/from-greenplum-path.sh-to-cloudberry-env.sh#background-why-this-change-is-necessary" class="hash-link" aria-label="Background: Why This Change is Necessary的直接链接" title="Background: Why This Change is Necessary的直接链接">​</a></h2>
+<p>As Apache Cloudberry (Incubating) matures, establishing a clear and independent brand identity is essential. While our project originated from Greenplum, it is now independently governed under the ASF Incubator, with a distinct development roadmap.</p>
+<p>The "Greenplum" name is a registered trademark owned by Broadcom Inc.. To comply with ASF policies and avoid potential trademark confusion, the PPMC reached a consensus through the discussion that took place on the Dev@ mailing list and GitHub issues to rename legacy user-facing scripts that use the <code>Greenplum</code> name term.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="a-phased-approach-to-the-transition">A Phased Approach to the Transition<a href="https://cloudberry.apache.org/zh/blog/from-greenplum-path.sh-to-cloudberry-env.sh#a-phased-approach-to-the-transition" class="hash-link" aria-label="A Phased Approach to the Transition的直接链接" title="A Phased Approach to the Transition的直接链接">​</a></h2>
+<p>To manage this transition smoothly, we will implement the changes in two phases:</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="phase-1-non-breaking-notice-release-20">Phase 1: Non-Breaking Notice (Release 2.0)<a href="https://cloudberry.apache.org/zh/blog/from-greenplum-path.sh-to-cloudberry-env.sh#phase-1-non-breaking-notice-release-20" class="hash-link" aria-label="Phase 1: Non-Breaking Notice (Release 2.0)的直接链接" title="Phase 1: Non-Breaking Notice (Release 2.0)的直接链接">​</a></h3>
+<p>The first step has been implemented in Pull Request <a href="https://github.com/apache/cloudberry/pull/1189" target="_blank" rel="noopener noreferrer">#1189</a> and will be included in the upcoming Apache Cloudberry 2.0 release.</p>
+<ul>
+<li>
+<p><strong>What's Changing</strong>: When you run <code>source greenplum_path.sh</code>, you will see a notice clarifying Apache Cloudberry’s independence from Broadcom’s Greenplum, like the following output:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#f8f8f2;--prism-background-color:#272822"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#f8f8f2;background-color:#272822"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#f8f8f2"><span class="token plain">[gpadmin@cloudberry]$ source /usr/local/cloudberry-db/greenplum_path.sh</span><br></span><span class="token-line" style="color:#f8f8f2"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#f8f8f2"><span class="token plain"># --------------------------------------------------------------------</span><br></span><span class="token-line" style="color:#f8f8f2"><span class="token plain"># NOTICE from the Apache Cloudberry PPMC</span><br></span><span class="token-line" style="color:#f8f8f2"><span class="token plain"># --------------------------------------------------------------------</span><br></span><span class="token-line" style="color:#f8f8f2"><span class="token plain"># This file uses the term 'greenplum' to maintain compatibility with</span><br></span><span class="token-line" style="color:#f8f8f2"><span class="token plain"># earlier versions of Apache Cloudberry, which was originally called</span><br></span><span class="token-line" style="color:#f8f8f2"><span class="token plain"># Greenplum. This usage does not refer to VMware Tanzu Greenplum,</span><br></span><span class="token-line" style="color:#f8f8f2"><span class="token plain"># nor does it imply that Apache Cloudberry (Incubating) is affiliated</span><br></span><span class="token-line" style="color:#f8f8f2"><span class="token plain"># with, endorsed by, or sponsored by Broadcom Inc.</span><br></span><span class="token-line" style="color:#f8f8f2"><span class="token plain">#</span><br></span><span class="token-line" style="color:#f8f8f2"><span class="token plain"># This file will be renamed in a future Apache Cloudberry release to</span><br></span><span class="token-line" style="color:#f8f8f2"><span class="token plain"># ensure compliance with Apache Software Foundation guidelines.</span><br></span><span class="token-line" style="color:#f8f8f2"><span class="token plain"># We will announce the change on the project mailing list and website.</span><br></span><span class="token-line" style="color:#f8f8f2"><span class="token plain">#</span><br></span><span class="token-line" style="color:#f8f8f2"><span class="token plain"># See: https://lists.apache.org/thread/b8o974mnnqk6zpy86dgll2pgqcvqgnwm</span><br></span><span class="token-line" style="color:#f8f8f2"><span class="token plain"># --------------------------------------------------------------------</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>
+<p><strong>Impact</strong>: This is a <strong>non-breaking change</strong>. Your scripts and workflows will continue to function as before. This step offers immediate brand clarification and serves as advance notice of the upcoming rename.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="phase-2-full-rename-targeted-for-release-21">Phase 2: Full Rename (Targeted for Release 2.1)<a href="https://cloudberry.apache.org/zh/blog/from-greenplum-path.sh-to-cloudberry-env.sh#phase-2-full-rename-targeted-for-release-21" class="hash-link" aria-label="Phase 2: Full Rename (Targeted for Release 2.1)的直接链接" title="Phase 2: Full Rename (Targeted for Release 2.1)的直接链接">​</a></h3>
+<p>The second step will complete the brand alignment.</p>
+<ul>
+<li>
+<p><strong>What's Changing</strong>: We plan to formally rename <code>greenplum_path.sh</code> to <code>cloudberry-env.sh</code>. This effort may also include a broader review of related configuration scripts and internal naming for consistency.</p>
+</li>
+<li>
+<p><strong>Impact</strong>: This will be a <strong>breaking change</strong>. You need to run the command <code>source cloudberry-env.sh</code> instead of <code>source greenplum_path.sh</code>. The change will be documented in the release notes, along with an optional alias method in the documentation, like:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#f8f8f2;--prism-background-color:#272822"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#f8f8f2;background-color:#272822"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#f8f8f2"><span class="token plain">sudo ln -s /usr/local/cloudberry-db/cloudberry-env.sh /usr/local/cloudberry-db/greenplum_path.sh</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-this-means-for-you">What This Means for You<a href="https://cloudberry.apache.org/zh/blog/from-greenplum-path.sh-to-cloudberry-env.sh#what-this-means-for-you" class="hash-link" aria-label="What This Means for You的直接链接" title="What This Means for You的直接链接">​</a></h3>
+<ul>
+<li><strong>For the 2.0 Release</strong>: No action is required. Simply be aware that the notice will now appear when setting up your environment.</li>
+<li><strong>For the 2.1 Release</strong>: Plan to update your scripts to use the new <code>cloudberry-env.sh</code> file.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="moving-forward">Moving Forward<a href="https://cloudberry.apache.org/zh/blog/from-greenplum-path.sh-to-cloudberry-env.sh#moving-forward" class="hash-link" aria-label="Moving Forward的直接链接" title="Moving Forward的直接链接">​</a></h2>
+<p>This initiative lays a stronger foundation for the project's future as we continue our journey toward becoming a Top-Level Project. We thank everyone who participated in the discussion and the ASF legal team for the valuable inputs and advice.</p>
+<p>Thank you for your support and understanding.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="related-discussion">Related Discussion<a href="https://cloudberry.apache.org/zh/blog/from-greenplum-path.sh-to-cloudberry-env.sh#related-discussion" class="hash-link" aria-label="Related Discussion的直接链接" title="Related Discussion的直接链接">​</a></h2>
+<ul>
+<li>GitHub PR: <a href="https://github.com/apache/cloudberry/pull/1189" target="_blank" rel="noopener noreferrer">https://github.com/apache/cloudberry/pull/1189</a></li>
+<li>Mailing list thread: <a href="https://lists.apache.org/thread/b8o974mnnqk6zpy86dgll2pgqcvqgnwm" target="_blank" rel="noopener noreferrer">https://lists.apache.org/thread/b8o974mnnqk6zpy86dgll2pgqcvqgnwm</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="join-us">Join Us<a href="https://cloudberry.apache.org/zh/blog/from-greenplum-path.sh-to-cloudberry-env.sh#join-us" class="hash-link" aria-label="Join Us的直接链接" title="Join Us的直接链接">​</a></h2>
+<ul>
+<li>Visit the website: <a href="https://cloudberry.apache.org/" target="_blank" rel="noopener noreferrer">https://cloudberry.apache.org</a></li>
+<li>Follow us on GitHub: <a href="https://github.com/apache/cloudberry" target="_blank" rel="noopener noreferrer">https://github.com/apache/cloudberry</a></li>
+<li>Join Slack workspace: <a href="https://apache-cloudberry.slack.com/" target="_blank" rel="noopener noreferrer">https://apache-cloudberry.slack.com</a></li>
+<li>Dev mailing list: to subscribe and check the archives, please visit <a href="https://cloudberry.apache.org/zh/community/mailing-lists">here</a></li>
+</ul>]]></content>
+        <author>
+            <name>Apache Cloudberry</name>
+        </author>
+        <category label="Announcement" term="Announcement"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Apache Cloudberry 2.0 Preview: Key Features and Improvements Ahead]]></title>
+        <id>https://cloudberry.apache.org/zh/blog/apache-cloudberry-2.0-preview-key-features-and-improvements-ahead</id>
+        <link href="https://cloudberry.apache.org/zh/blog/apache-cloudberry-2.0-preview-key-features-and-improvements-ahead"/>
+        <updated>2025-06-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Key highlights of Apache Cloudberry 2.0]]></summary>
+        <content type="html"><![CDATA[<p>The next major release of Apache Cloudberry (Incubating)—version 2.0—is just around the corner. As the project’s first Apache release since joining the Apache Incubator, Cloudberry 2.0 brings a host of new features, performance enhancements, and compliance improvements. While the official release is still in progress, we’d like to share a preview of the most exciting changes and innovations you can expect. This overview highlights the key updates and sets the stage for the upcoming launch.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="key-highlights-of-apache-cloudberry-20">Key Highlights of Apache Cloudberry 2.0<a href="https://cloudberry.apache.org/zh/blog/apache-cloudberry-2.0-preview-key-features-and-improvements-ahead#key-highlights-of-apache-cloudberry-20" class="hash-link" aria-label="Key Highlights of Apache Cloudberry 2.0的直接链接" title="Key Highlights of Apache Cloudberry 2.0的直接链接">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="codebase-cleanup">Codebase Cleanup<a href="https://cloudberry.apache.org/zh/blog/apache-cloudberry-2.0-preview-key-features-and-improvements-ahead#codebase-cleanup" class="hash-link" aria-label="Codebase Cleanup的直接链接" title="Codebase Cleanup的直接链接">​</a></h3>
+<p>One of the major efforts in this release was cleaning up the code repository to remove outdated and unused files. This includes legacy components such as Concourse CI configurations (<code>concourse/*</code>), <code>hd-ci/*</code>, legacy deployment directories (e.g., Vagrant and Kubernetes setups), and redundant artifacts like PyGreSQL-related files. This cleanup streamlines the codebase, making it easier for contributors to navigate and focus on meaningful development.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="brand-refresh">Brand Refresh<a href="https://cloudberry.apache.org/zh/blog/apache-cloudberry-2.0-preview-key-features-and-improvements-ahead#brand-refresh" class="hash-link" aria-label="Brand Refresh的直接链接" title="Brand Refresh的直接链接">​</a></h3>
+<p>As part of the transition to the Apache Incubator, we’ve unified branding across the project source code and website. References to legacy names like "Cloudberry Database" and "CloudberryDB" have been replaced with <code>Apache Cloudberry</code> or simply <code>Cloudberry</code>. This ensures consistency and aligns the project with Apache’s branding guidelines.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="compliance-improvements">Compliance Improvements<a href="https://cloudberry.apache.org/zh/blog/apache-cloudberry-2.0-preview-key-features-and-improvements-ahead#compliance-improvements" class="hash-link" aria-label="Compliance Improvements的直接链接" title="Compliance Improvements的直接链接">​</a></h3>
+<p>To meet Apache’s licensing and compliance standards, we’ve added the standard Apache License headers to all relevant newly created files by the Cloudberry community, replaced incompatible tarballs like Pylint (GPL-licensed) with Ruff (MIT-licensed), and ensured the codebase passes Apache RAT validation.</p>
+<p>We’ve reworded the NOTICE, LICENSE, DISCLAIMER, COPYRIGHT, and SECURITY files to reflect the new Apache Cloudberry branding and compliance requirements. All submodules and components’ licenses are listed in the top-level <code>licenses</code> directory.</p>
+<p>Our PPMC members and committers have all signed the ICLA (Individual Contributor License Agreement) files and the Cloudberry donation corporation also signed the Software Grant Agreement (SGA) files and and has been filed with the Apache Software Foundation.</p>
+<p>These changes make Cloudberry fully compliant with Apache’s open-source policies, paving the way for a smooth release process.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cherry-picked-enhancements-from-archived-greenplum">Cherry-Picked Enhancements from archived Greenplum<a href="https://cloudberry.apache.org/zh/blog/apache-cloudberry-2.0-preview-key-features-and-improvements-ahead#cherry-picked-enhancements-from-archived-greenplum" class="hash-link" aria-label="Cherry-Picked Enhancements from archived Greenplum的直接链接" title="Cherry-Picked Enhancements from archived Greenplum的直接链接">​</a></h3>
+<p>Apache Cloudberry 2.0 incorporates hundreds of commits cherry-picked from the archived Greenplum repository. These include critical bug fixes, performance improvements, and enhancements to the ORCA query optimizer and other components. While some changes outside Cloudberry’s roadmap were deprioritized, the codebase is now largely aligned with Greenplum, offering a solid foundation for future development. Community contributors are welcome to pick up tasks related to these deprioritized changes. See the <a href="https://github.com/apache/cloudberry/discussions/675" target="_blank" rel="noopener noreferrer">proposal</a> for more details.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-features-and-enhancements">New Features and Enhancements<a href="https://cloudberry.apache.org/zh/blog/apache-cloudberry-2.0-preview-key-features-and-improvements-ahead#new-features-and-enhancements" class="hash-link" aria-label="New Features and Enhancements的直接链接" title="New Features and Enhancements的直接链接">​</a></h3>
+<p>This release introduces new features and enhancements that expand Cloudberry’s capabilities compared to the previous Cloudberry 1.6 release:</p>
+<ul>
+<li>Dynamic Tables: Automatically refresh query results based on base tables, external tables, or materialized views—ideal for building live analytical dashboards. See the <a href="https://cloudberry.apache.org/docs/next/performance/use-dynamic-tables" target="_blank" rel="noopener noreferrer">doc</a> for more details.</li>
+<li>PAX: Introduces a hybrid row-column storage model that improves cache efficiency and supports both object and local file systems. See the <a href="https://cloudberry.apache.org/docs/next/operate-with-data/pax-table-format" target="_blank" rel="noopener noreferrer">doc</a> for more details.</li>
+<li>And More: Cloudberry 2.0 brings extensive enhancements across query optimization, the ORCA optimizer, transaction management, storage, data handling, resource managment, and tools. Full details will be available in the official 2.0 release notes.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cicd-process">CICD Process<a href="https://cloudberry.apache.org/zh/blog/apache-cloudberry-2.0-preview-key-features-and-improvements-ahead#cicd-process" class="hash-link" aria-label="CICD Process的直接链接" title="CICD Process的直接链接">​</a></h3>
+<p>Since entering the Apache Incubator, a strong CI/CD pipeline has been established. This pipeline covers all the core tests and checks to ensure the quality of the codebase. At the same time, it can support parallel tests to speed up the CI/CD process, and output the detailed test result parsing and reporting, etc.</p>
+<p>As an Apache Incubator project, Apache Cloudberry 2.0 follows the Apache Software Foundation’s release process, including community discussions, voting, and compliance checks. This ensures the release meets the standards of quality and transparency.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="security-enhancements">Security Enhancements<a href="https://cloudberry.apache.org/zh/blog/apache-cloudberry-2.0-preview-key-features-and-improvements-ahead#security-enhancements" class="hash-link" aria-label="Security Enhancements的直接链接" title="Security Enhancements的直接链接">​</a></h3>
+<p>Security has been a top priority for Apache Cloudberry 2.0. We’ve introduced Coverity Scan and SonarQube for automated weekly code analysis, ensuring the codebase is robust and secure.</p>
+<p>Additionally, we’ve addressed critical vulnerabilities, including PostgreSQL CVE-2025-1049 fixes, and upgraded dependencies such as <code>PyYAML</code> to patch known issues. These measures reinforce Cloudberry’s commitment to providing a secure and reliable database platform.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="website-and-docs-updates">Website and Docs updates<a href="https://cloudberry.apache.org/zh/blog/apache-cloudberry-2.0-preview-key-features-and-improvements-ahead#website-and-docs-updates" class="hash-link" aria-label="Website and Docs updates的直接链接" title="Website and Docs updates的直接链接">​</a></h3>
+<p>The website and documentation have been updated to reflect the new branding and features. The website now includes a new design, updated content, and better navigation. The documentation has been updated to reflect the new features and changes in the codebase.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="looking-ahead">Looking Ahead<a href="https://cloudberry.apache.org/zh/blog/apache-cloudberry-2.0-preview-key-features-and-improvements-ahead#looking-ahead" class="hash-link" aria-label="Looking Ahead的直接链接" title="Looking Ahead的直接链接">​</a></h2>
+<p>As an Apache Incubator project, Cloudberry 2.0 follows the ASF’s rigorous release process, including open discussion, voting, and compliance checks. This ensures transparency, quality, and community trust.</p>
+<p>With a cleaner codebase, enhanced security, and exciting new features and enhancements, Apache Cloudberry 2.0 will be a major milestone that sets the stage for future innovation. We invite the community to join us in shaping the future of Apache Cloudberry by contributing, testing, and sharing feedback.</p>
+<p>Stay tuned for the official 2.0 release announcement! Thank you for being part of the Apache Cloudberry journey!</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="join-us">Join Us<a href="https://cloudberry.apache.org/zh/blog/apache-cloudberry-2.0-preview-key-features-and-improvements-ahead#join-us" class="hash-link" aria-label="Join Us的直接链接" title="Join Us的直接链接">​</a></h2>
+<ul>
+<li>Visit the website: <a href="https://cloudberry.apache.org/" target="_blank" rel="noopener noreferrer">https://cloudberry.apache.org</a></li>
+<li>Follow us on GitHub: <a href="https://github.com/apache/cloudberry" target="_blank" rel="noopener noreferrer">https://github.com/apache/cloudberry</a></li>
+<li>Join Slack workspace: <a href="https://apache-cloudberry.slack.com/" target="_blank" rel="noopener noreferrer">https://apache-cloudberry.slack.com</a></li>
+<li>Dev mailing list: to subscribe and check the archives, please visit <a href="https://cloudberry.apache.org/zh/community/mailing-lists">here</a></li>
+</ul>]]></content>
+        <author>
+            <name>Apache Cloudberry</name>
+        </author>
+        <category label="Release" term="Release"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Apache Cloudberry Incubation Report - May 2025]]></title>
         <id>https://cloudberry.apache.org/zh/blog/apache-cloudberry-incubation-report-202505</id>
