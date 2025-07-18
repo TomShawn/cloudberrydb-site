@@ -2,64 +2,7 @@
 title: 如何排查性能问题
 ---
 
-# 如何排查性能问题
-
-本章将指导你如何识别并排查 Apache Cloudberry 系统中的性能问题。
-
-你可以按照以下步骤，一步步找出性能问题的根源。如果只是某个查询或工作负载变慢，那么问题可能出在它本身。但如果整个系统性能都出现问题，则很可能是硬件故障、系统异常或资源争用导致的。
-
-## 检查系统状态
-
-首先，使用 `gpstate` 工具检查是否有发生故障的 Segment。一旦有 Segment 实例宕机，其处理任务会转移到其他主机上，这必然导致整个 Apache Cloudberry 系统性能下降。
-
-Segment 故障往往是硬件问题的征兆，比如磁盘或网卡损坏。你可以使用 Apache Cloudberry 自带的硬件验证工具 `gpcheckperf`，快速找出有硬件问题的 Segment 主机。
-
-## 检查数据库活动
-
-- [检查活动会话（工作负载）](#检查活动会话工作负载)
-- [检查锁（资源争用）](#检查锁资源争用)
-- [检查查询状态和系统利用率](#检查查询状态和系统利用率)
-
-### 检查活动会话（工作负载）
-
-`pg_stat_activity` 是一个系统目录视图，它的每一行都对应一个正在运行的服务器进程，其中包含了数据库 OID、数据库名称、进程 ID、用户 OID、用户名、当前查询、查询开始时间、进程启动时间、客户端地址和端口号等信息。为了看到最全面的系统负载信息，建议使用数据库超级用户身份来查询该视图。例如：
-
-```sql
-SELECT * FROM pg_stat_activity;
-```
-
-请注意，这些信息不是瞬时更新的。
-
-### 检查锁（资源争用）
-
-`pg_locks` 系统目录视图可以让你一览所有未释放的锁。当一个事务锁定了某个对象，其他查询就只能排队等待，直到锁被释放。从用户的角度看，就是查询好像卡住了。
-
-只要查询 `pg_locks` 中那些“未被授予”（granted=false）的锁，就能很快定位到客户端会话之间的资源争用。`pg_locks` 提供了数据库系统中所有锁的全局视图，而不仅仅是当前数据库的锁。你可以将其 `relation` 列与 `pg_class.oid` 进行连接，以识别被锁定的关系（例如表），但这仅对当前数据库中的关系有效。你还可以将其 `pid` 列与 `pg_stat_activity.pid` 连接，以查看关于持有锁或等待锁的会话的更多信息。例如：
-
-```sql
-SELECT locktype, database, c.relname, l.relation, 
-l.transactionid, l.pid, l.mode, l.granted, 
-a.query 
-        FROM pg_locks l, pg_class c, pg_stat_activity a 
-        WHERE l.relation=c.oid AND l.pid=a.pid
-        ORDER BY c.relname;
-```
-
-如果你使用了资源组，等待执行的查询也会出现在 `pg_locks` 中。要查看在某个资源组中有多少查询正在等待，可以使用 `gp_toolkit.gp_resgroup_status` 系统目录视图。例如：
-
-```sql
-SELECT * FROM gp_toolkit.gp_resgroup_status;
-```
-
-同理，如果你使用了资源队列，在队列中等待的查询也会显示在 `pg_locks` 中。要查看有多少查询在等待执行，可以使用 `gp_toolkit.gp_resqueue_status` 系统目录视图。例如：
-
-```sql
-SELECT * FROM gp_toolkit.gp_resqueue_status;
-```
-
-### 检查查询状态和系统利用率
-
-要监控 Apache Cloudberry 集群上各个主机的数据库活动，可以借助 `ps`、`top`、`iostat`、`vmstat`、`netstat` 等常见的系统监控工具。借助这些工具，你可以轻易找出当前正在运行的 Apache Cloudberry 进程（即 `postgres` 进程），并定位到那些消耗 CPU、内存、磁盘I/O或网络资源最多的任务。通过分析这些系统统计数据，你就能揪出那些因过度消耗资源而拖慢系统性能的查询。
+，可以借助 `ps`、`top`、`iostat`、`vmstat`、`netstat` 等常见的系统监控工具。借助这些工具，你可以轻易找出当前正在运行的 Apache Cloudberry 进程（即 `postgres` 进程），并定位到那些消耗 CPU、内存、磁盘I/O或网络资源最多的任务。通过分析这些系统统计数据，你就能揪出那些因过度消耗资源而拖慢系统性能的查询。
 
 更方便的是，你可以使用 Apache Cloudberry 的管理工具 `gpssh`，在所有主机上同时运行这些监控命令。
 
