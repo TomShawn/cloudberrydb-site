@@ -11,8 +11,8 @@ By this, you will get an Apache Cloudberry environment with a demo cluster ready
 
 <Tabs>
 <TabItem value="rocky-linux" label="For Rocky Linux 8+" default>
-```bash
 
+```bash
 # Install sudo & git
 dnf install -y sudo git
 
@@ -127,9 +127,11 @@ sudo ln -s ${XERCES_INSTALL_PREFIX}-${XERCES_LATEST_RELEASE} ${XERCES_INSTALL_PR
 # Switch to the gpadmin user from now on
 sudo su - gpadmin
 
-# Download Source Code
+# Download Source Code (2.x branch)
 git clone https://github.com/apache/cloudberry.git ~/cloudberry
 cd ~/cloudberry
+git fetch --tags
+git checkout tags/2.0.0-incubating
 git submodule update --init --recursive
 
 # Prepare the build environment for Apache Cloudberry
@@ -190,10 +192,9 @@ psql -P pager=off template1 -c 'SELECT * from gp_segment_configuration'
 psql template1 -c 'SELECT version()'
 ```
 </TabItem>
-<TabItem value="ubuntu" label="For Ubuntu 22.04+">
+<TabItem value="ubuntu" label="For Ubuntu 20.04+">
 
 ```bash
-
 # Install sudo & git
 apt update && apt install -y sudo git
 
@@ -281,9 +282,11 @@ sudo apt install -y bison \
 # Use the gpadmin user from now on
 sudo su - gpadmin
 
-# Clone the Apache Cloudberry repository
+# Clone the Apache Cloudberry repository (2.x branch)
 git clone https://github.com/apache/cloudberry.git ~/cloudberry
 cd ~/cloudberry
+git fetch --tags
+git checkout tags/2.0.0-incubating
 git submodule update --init --recursive
 
 # Prepare the build environment for Apache Cloudberry
